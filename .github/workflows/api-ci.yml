@@ -10,7 +10,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   build_and_test:
     runs-on: ubuntu-latest
     steps:
@@ -21,20 +20,12 @@ jobs:
         run: |
           docker-compose run api python manage.py test
   coverage:
-    needs: [ build_and_test ]
-    name: coverage
     runs-on: ubuntu-latest
+    name: coverage
     steps:
     - uses: actions/checkout@master
-    - uses: actions/setup-node@master
-      with:
-        node-version: '12'
-    - run: npm install -g yarn
-    - run: yarn install
-    - run: yarn build
-    - uses: paambaati/codeclimate-action@v2.2.4
+    - uses: paambaati/codeclimate-action@v2.7.5
       env:
         CC_TEST_REPORTER_ID: 806251845d79d7472d90d5efaae94b54a4ee5adc159386813d99563eb86c2468
       with:
-        coverageCommand: yarn coverage
         coverageLocations: ${{github.workspace}}/api/*
