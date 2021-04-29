@@ -20,6 +20,7 @@ jobs:
         run: |
           docker-compose run api python manage.py test
   coverage:
+    needs: [ build_and_test ]
     runs-on: ubuntu-latest
     name: coverage
     steps:
