@@ -24,6 +24,9 @@ jobs:
     name: coverage
     steps:
     - uses: actions/checkout@master
+    - run: npm install -g yarn
+    - run: yarn install
+    - run: yarn build
     - uses: paambaati/codeclimate-action@v2.7.5
       env:
         CC_TEST_REPORTER_ID: 806251845d79d7472d90d5efaae94b54a4ee5adc159386813d99563eb86c2468
