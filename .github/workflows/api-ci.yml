@@ -9,8 +9,7 @@ on:
   pull_request:
     branches: [master]
     paths:
-      - "api/**"
-      
+      - "api/**"    
 jobs: 
   build_and_test:
     runs-on: ubuntu-latest
