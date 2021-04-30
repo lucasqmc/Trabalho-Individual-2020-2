@@ -22,3 +22,25 @@ jobs:
         run: docker-compose up -d client
       - name: Run tests
         run: docker-compose run client quasar test --unit jest
+  coverage:
+    needs: [ build_and_test ]
+    runs-on: ubuntu-latest
+    name: coverage
+    steps:
+    - uses: actions/checkout@master
+    - uses: paambaati/codeclimate-action@v2.7.5
+      env:
+        CC_TEST_REPORTER_ID: 806251845d79d7472d90d5efaae94b54a4ee5adc159386813d99563eb86c2468
+      with:
+        coverageLocations: ${{github.workspace}}/client/*
+  sonarcloud-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v1.4
+        with:
+          projectBaseDir: client
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_API }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
