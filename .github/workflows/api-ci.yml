@@ -54,4 +54,4 @@ jobs:
             heroku_api_key: d8dfe858-2bcf-4039-817b-e3b517519573
             heroku_app_name : gces-api2
             heroku_email: 'lucasleitemm@hotmail.com'
-            working-directory: ./api
+            appdir: api
