@@ -39,5 +39,5 @@ jobs:
         with:
           projectBaseDir: api
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_API }}
+          SONAR_TOKEN: 0f46fa26c986db48840be910cb8cb85bcaddf199
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
