@@ -42,6 +42,7 @@ jobs:
           SONAR_TOKEN: be937845fd108c66d46c654c77faf77b0372dbc7
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   heroku_git_deploy_job:
+      needs: [ build_and_test,sonarcloud-analysis ]
       runs-on: ubuntu-latest
       name: Git Deploy job- A job to deploy django app to heroku using git
       steps:
