@@ -49,10 +49,9 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
         - name: Deploy django to heroku
-          uses: nyakaz73/heroku-django-deploy@v0.68 
+          uses: akhileshns/heroku-deploy@v3.4.6
           with: 
-            heroku_app_name : gces-api2
             heroku_api_key: d8dfe858-2bcf-4039-817b-e3b517519573
-            heroku_email_address: 'lucasleitemm@hotmail.com'
-            use_git: true
+            heroku_app_name : gces-api2
+            heroku_email: 'lucasleitemm@hotmail.com'
             working-directory: ./api
