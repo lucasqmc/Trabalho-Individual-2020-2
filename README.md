@@ -1,11 +1,9 @@
 # Trabalho Individual 2020.2
 
-
+lucasqmc_Trabalho-Individual-2020-2
 [![codecov](https://codecov.io/gh/lucasqmc/Trabalho-Individual-2020-2/branch/master/graph/badge.svg?token=INGAG1ONQQ)](https://codecov.io/gh/lucasqmc/Trabalho-Individual-2020-2)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_api&metric=alert_status)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_api)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_api&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_api)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_client&metric=alert_status)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_client)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_client&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_client)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2)
+
 
 
 
