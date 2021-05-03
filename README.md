@@ -3,6 +3,10 @@
 lucasqmc_Trabalho-Individual-2020-2
 [![codecov](https://codecov.io/gh/lucasqmc/Trabalho-Individual-2020-2/branch/master/graph/badge.svg?token=INGAG1ONQQ)](https://codecov.io/gh/lucasqmc/Trabalho-Individual-2020-2)
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2&metric=bugs)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2&metric=code_smells)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2&metric=ncloc)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2)
 
 
 
