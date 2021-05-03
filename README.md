@@ -1,6 +1,14 @@
 # Trabalho Individual 2020.2
 
 
+[![codecov](https://codecov.io/gh/lucasqmc/Trabalho-Individual-2020-2/branch/master/graph/badge.svg?token=INGAG1ONQQ)](https://codecov.io/gh/lucasqmc/Trabalho-Individual-2020-2)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_api&metric=alert_status)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_api)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_api&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_api)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_client&metric=alert_status)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_client)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasqmc_Trabalho-Individual-2020-2_1_client&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=lucasqmc_Trabalho-Individual-2020-2_1_client)
+
+
+
 A Gestão de Configuração de Software é parte fundamental no curso de GCES, e dominar os conhecimentos de configuração de ambiente, containerização, virtualização, integração e deploy contínuo tem se tornado cada vez mais necessário para ingressar no mercado de trabalho.
 
 Para exercitar estes conhecimentos, você deverá aplicar os conceitos estudados ao longo da disciplina no produto de software contido neste repositório.
