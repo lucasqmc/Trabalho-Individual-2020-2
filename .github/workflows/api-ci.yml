@@ -41,17 +41,19 @@ jobs:
         env:
           SONAR_TOKEN: be937845fd108c66d46c654c77faf77b0372dbc7
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  heroku_git_deploy_job:
-      needs: [ build_and_test,sonarcloud-analysis ]
-      runs-on: ubuntu-latest
-      name: Git Deploy job- A job to deploy django app to heroku using git
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - name: Deploy django to heroku
-          uses: akhileshns/heroku-deploy@v3.4.6
-          with: 
-            heroku_api_key: 8e7f1b76-ec11-4159-a122-310395c37a29
-            heroku_app_name : gces-api2
-            heroku_email: 'lucasleitemm@hotmail.com'
-            appdir: api
+  deploy:
+    needs: [ build_and_test,sonarcloud-analysis ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy docker container to heroku.
+        uses: gonuit/heroku-docker-deploy@v1.3.2
+        with:
+          email: lucasleitemm@hotmail.com
+          heroku_api_key: 8e7f1b76-ec11-4159-a122-310395c37a29
+          heroku_app_name: gces-api2
+          dockerfile_directory: ./api/
+          dockerfile_name: Dockerfile
+          docker_options: "--no-cache"
+          process_type: web
