@@ -1,0 +1,17 @@
+FROM nikolaik/python-nodejs:latest
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN yarn install
+
+RUN yarn global add @quasar/cli
+
+RUN yarn add express serve-static connect-history-api-fallback
+
+COPY . .
+
+RUN yarn build
+
+CMD [ "yarn", "serve" ]
