@@ -45,6 +45,7 @@ jobs:
           SONAR_TOKEN: be937845fd108c66d46c654c77faf77b0372dbc7
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   deploy:
+    needs: [ build_and_test,sonarcloud-analysis ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
